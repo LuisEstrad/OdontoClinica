@@ -1,0 +1,38 @@
+.map-container {
+    position: relative;
+    height: 60vh; 
+    width: 80%;
+}
+
+.map-marker {
+    position: absolute;
+    top: calc(50% + 8px); 
+    left: calc(50% + 16px); 
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0.5; 
+    z-index: 1000; 
+}
+
+.hidden {
+    display: none !important; 
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1) translate(-50%, -50%);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1) translate(-50%, -50%);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1) translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+.map-marker > svg {
+    animation: pulse 1s infinite;
+}
