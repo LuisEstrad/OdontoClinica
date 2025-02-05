@@ -1,67 +1,164 @@
-# Getting Started with Create React App
+# 🏥 Clínica SE Odontología - Página Web
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🚀 Proyecto de una página web para **Clínica SE Odontología**, diseñado para proporcionar información sobre los servicios odontológicos, ubicación y contacto.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📜 Descripción General
+Esta página web permite a los pacientes conocer nuestros servicios, ubicar nuestra clínica en el mapa y agendar citas en línea. Aun se encuentra en desarrollo con lenguaje y tecnología de: **HTML, CSS, JavaScript y React**.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🎨 Capturas de Pantalla
+### 🌟 Página de Inicio
+![Página de Inicio](media/Images/Homepage.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📍 Ubicación de la Clínica
+![Mapa](media/Images/Location.png)
 
-### `npm test`
+### 🦷 Otros
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Contacto](media/Images/Contact.png)
+![404](media/Images/Notfound.png)
+![Servicios1](media/Images/Services1.png)
+![Servicios2](media/Images/Services2.png)
+![Sociales](media/Images/Socials.png)
 
-### `npm run build`
+🎥 **Video de presentación**
+### 🌟 Sección de Inicio
+[![Ver Video](media/Images/Homepage.png)](https://youtu.be/3lQkPgW_EUQ)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🌟 Otras Secciones
+[![Ver Video](media/Images/Location.png)](https://youtu.be/xONhUH-PPEo)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## 📂 Estructura del Proyecto
+```
+📦 OdontoClinica
+├── 📂 media
+│   ├── 📂 public
+│   │   ├── 📂 images
+│   │   │   ├── 📂 Icons
+│   │   │   │   ├── Red-marker.png
+│   │   │   ├── 📂 Logos
+│   │   │   │   ├── Facebook.png
+│   │   │   │   ├── Instagram.png
+│   │   │   │   ├── SELogo.jpg
+│   │   │   │   ├── Whatsapp.png
+│   │   │   │   ├── WhatsappQR.png
+│   │   │   ├── 📂 ServiceList
+│   │   │   │   ├── Blanqueamiento.png
+│   │   │   │   ├── Cirugia.png
+│   │   │   │   ├── Endodoncia.png
+│   │   │   │   ├── Extracciones.png
+│   │   │   │   ├── Implante.png
+│   │   │   │   ├── Limpieza.png
+│   │   │   │   ├── OdontologiaInfantil.png
+│   │   │   │   ├── Ortodoncia.png
+│   │   │   │   ├── Ortopedia.png
+│   │   │   │   ├── Periodoncia.png
+│   │   │   │   ├── Protesis.png
+│   │   │   │   ├── Rehabilitacion.png
+│   │   │   ├── Background.jpg
+│   │   │   ├── Error404.png
+│   │   │   ├── SuperBackground.png
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   ├── robots.txt
+├── 📂 src
+│   ├── 📂 app
+│   │   ├── App.css
+│   │   ├── App.test.js
+│   │   ├── index.js
+│   │   ├── logo.svg
+│   ├── 📂 components
+│   │   ├── 📂 Alert
+│   │   │   ├── Alert.css
+│   │   │   ├── index.js
+│   │   ├── 📂 Contacto
+│   │   │   ├── index.js
+│   │   ├── 📂 Header
+│   │   │   ├── header.css
+│   │   │   ├── index.js
+│   │   ├── 📂 HomeSlider
+│   │   │   ├── HomeSlider.css
+│   │   │   ├── index.js
+│   │   ├── 📂 Map
+│   │   │   ├── Map.css
+│   │   │   ├── index.js
+│   │   ├── 📂 NotFound
+│   │   │   ├── NotFound.css
+│   │   │   ├── index.js
+│   │   ├── 📂 ServiceList
+│   │   │   ├── index.js
+│   │   ├── 📂 TopHeader
+│   │   │   ├── TopHeader.css
+│   │   │   ├── index.js
+│   ├── 📂 context
+│   │   ├── context.js
+│   ├── 📂 hooks
+│   │   ├── validations.js
+│   ├── 📂 pages
+│   │   ├── 📂 Contact
+│   │   │   ├── index.js
+│   │   ├── 📂 Home
+│   │   │   ├── index.js
+│   │   ├── 📂 NotFound
+│   │   │   ├── index.js
+│   │   ├── 📂 Services
+│   │   │   ├── index.js
+│   ├── index.css
+│   ├── index.js
+│   ├── reportWebVitals.js
+│   ├── setupTests.js
+├── .gitignore
+├── README.md
+├── package-lock.json
+├── package.json
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚙️ Tecnologías Usadas
+✅ **Frontend:** HTML, CSS, JavaScript  
+✅ **Framework:** React  
+✅ **Mapas:** Leaflet.js  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📦 Instalación y Uso
 
-## Learn More
+1. **Clona el repositorio:**
+   ```sh
+   git clone https://github.com/LuisEstrad/OdontoClinica.git
+   ```
+2. **Ingresa a la carpeta del proyecto:**
+   ```sh
+   cd OdontoClinica
+   ```
+3. **Abre el archivo en el navegador:**
+   - Si usas Live Server en VS Code, haz clic en "Go Live".
+   - Si prefieres manualmente, abre `index.html`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 💡 Características Principales
+✅ Diseño responsivo y adaptable.  
+✅ Integración con **Leaflet.js** para mostrar la ubicación.  
+✅ Formulario de contacto con validación y envío de correos con **EmailJS**.  
+✅ Galería de imágenes.  
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
+## 📬 Contacto
+👨‍💻 **Desarrollador:** Luis Ángel Mata Estrada 
+✉️ **Email:** luis.matae@outlook.com  
+📞 **Teléfono:** 8123910618
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
